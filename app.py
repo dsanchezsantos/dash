@@ -1,11 +1,7 @@
 import streamlit as st
 import pandas as pd
-import locale
 import plotly.express as px
 from supabase import create_client
-from datetime import datetime as dt
-
-locale.setlocale(locale.LC_TIME, 'pt_BR.utf8')
 
 SUPABASE_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZmaHl1dmppcW9zZHJ6Y3FneHBhIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTcwMTQ1NjIwNywiZXhwIjoyMDE3MDMyMjA3fQ.EvNKry-AIdhfq-SZW6lrhEM0716nRDd-KLCxqhn6Y1s"
 SUPABASE_URL="https://vfhyuvjiqosdrzcqgxpa.supabase.co"
