@@ -1,19 +1,17 @@
-[project]
+[tool.poetry]
 name = "dash"
 version = "0.1.0"
 description = ""
-authors = [
-    {name = "dsanchezsantos",email = "dsanchezsantos@gmail.com"}
-]
+authors = ["dsanchezsantos <dsanchezsantos@gmail.com>"]
 readme = "README.md"
-requires-python = ">=3.13,<4.0"
-dependencies = [
-    "streamlit (>=1.42.0,<2.0.0)",
-    "plotly (>=6.0.0,<7.0.0)",
-    "supabase (>=2.13.0,<3.0.0)"
-]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+streamlit = "^1.42.0"
+supabase = "^2.13.0"
+plotly = "^6.0.0"
 
 
 [build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
+requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
